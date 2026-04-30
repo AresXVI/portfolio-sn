@@ -1,4 +1,4 @@
-import { ConfigProvider, Drawer } from 'antd'
+import { ConfigProvider } from 'antd'
 import { LocaleProvider } from '../providers/LocaleProvider'
 
 export default function Providers({ children, initialMessages }: { children: React.ReactNode, initialMessages: Record<string, any> }) {

@@ -9,38 +9,6 @@ interface IProps {
     copyFunc: (item: IContactInformation) => Promise<void>
 }
 
-// export const ContactInformationCard = ({card, copyFunc}: IProps) => {
-//     const t = useTranslations('contactPage')
-//     const Icon = card.icon
-//     console.log('>>>>>>>', card.desc);
-    
-//     return  (
-//         <div className='flex items-center'>
-//             <a
-//                 href={card.link}
-//                 className="group w-full rounded-2xl pt-4 flex gap-3 items-center"
-//                 target='_blank'
-//             >
-//                 <div className='flex justify-center items-center w-12 h-12 bg-[linear-gradient(to_right,var(--color-gradient-start),var(--color-gradient-end))] rounded-xl'>
-//                     <Icon />
-//                 </div>
-//                 <div>
-//                     <p className='text-lg font-medium text-(--color-desc)!'>{t(card.title)}</p>
-//                     <span className='group-hover:text-(--primary) transition-colors'>{t(card.desc)}</span>
-//                 </div>
-//             </a>
-//             {card.copy && (
-//                 <div
-//                     onClick={() => copyFunc(card)}
-//                     className='w-8 flex justify-end cursor-pointer transition-all duration-300 hover:text-(--primary)/80 active:text-(--color-gradient-end)'
-//                 >
-//                     <CopyOutlined/>
-//                 </div>
-//             )}
-//         </div>
-//     )
-// }
-
 export const ContactInformationCard = ({ card, copyFunc }: IProps) => {
     const t = useTranslations('contactPage')
     const Icon = card.icon
