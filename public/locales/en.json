@@ -1,0 +1,144 @@
+{
+    "navbar": {
+        "welcome": "Home",
+        "aboutMe": "About Me",
+        "myProjects": "Projects",
+        "contact": "Contacts"
+    },
+    "welcomePage": {
+        "greetingDefault": "Hi, I'm",
+        "greetingGradient": "N. Satymbaev",
+        "title": "Frontend Developer",
+        "description": "I craft fast, scalable and user-focused web applications with React and modern technologies.",
+        "viewProjectButton": "View Projects",
+        "getInTouchButton": "Get in Touch"
+    },
+    "aboutMePage": {
+        "title": {
+            "default": "About",
+            "gradient": "Me"
+        },
+        "mainCard": {
+            "title": "Frontend Developer",
+            "mySpecialize": "I specialize in React and modern web technologies, building fast, responsive, and user-friendly interfaces that focus on real user needs.",
+            "myWebBuild": "I build modern web applications focused on performance, simplicity, and user experience, tailored to user needs.",
+            "forMe": "For me, development is not just about code — it's about solving real problems and delivering meaningful results that make everyday life easier.",
+            "mainTechnologies": "Main Technologies"
+        },
+        "cards": {
+            "cleanCode": {
+                "title": "Clean code",
+                "desc": "I like when code is simple, readable, and easy to work with later."
+            },
+            "problemSolving": {
+                "title": "Problem solving",
+                "desc": "I break down complex problems into simple and clear solutions."
+            },
+            "communication": {
+                "title": "Communication",
+                "desc": "Teamwork and clear communication are essential."
+            },
+            "passionForDevelopment": {
+                "title": "Passion for Development",
+                "desc": "I love what I do and bring passion to every project."
+            }
+        }
+    },
+    "projectsPage": {
+        "title": {
+            "default": "My",
+            "gradient": "Projects"
+        },
+        "projects": {
+            "viewProject": "View project",
+            "iDyikan": {
+                "title": "IDyikan",
+                "desc": "iDyikan is a government digital platform for farmers that enables efficient asset management, task planning, and request tracking. With a clear interface and structured data, it helps users manage agricultural processes effectively.",
+                "completedTasks": {
+                    "1": "Designed and implemented a detailed task view in the “My Assets” section, including status tracking and staff information.",
+                    "2": "Developed request tables in the “My Requests” section with accurate data visualization and reliable backend integration."
+                }
+            },
+            "agroDialog": {
+                "title": "AgroDialog",
+                "desc": "A single-page event platform with participant registration and administrative management system.",
+                "completedTasks": {
+                    "1": "Built an interactive landing page with section-based navigation and registration modal.",
+                    "2": "Developed admin panel with authentication, participant filtering, and management tools.",
+                    "3": "Implemented PDF report viewing and downloading functionality.",
+                    "4": "Applied SEO optimization for better visibility."
+                }
+            },
+            "seedProducersCabinet": {
+                "title": "Seed Producers Cabinet",
+                "desc": "A government digital platform for seed production enterprises enabling submission of subsidy applications, management of production data, and participation in the national seed distribution system.",
+                "completedTasks": {
+                    "1": "Extracted seed producer functionality from a monolithic system and implemented it as an independent service.",
+                    "2": "Implemented authentication and role-based access with dedicated navigation and user flow separation.",
+                    "3": "Implemented full application lifecycle from submission to processing through an administrative panel."
+                }
+            },
+            "agroPortal": {
+                "title": "AgroPortal",
+                "desc": "AgroPortal is a government digital platform for farmers and agribusinesses, providing access to agricultural services such as crop production, livestock management, biological protection, and tariff quota systems.",
+                "completedTasks": {
+                    "1": "Developed dynamic vertical timelines to visualize service workflows and process stages.",
+                    "2": "Implemented responsive interface ensuring usability across desktop and mobile devices.",
+                    "3": "Optimized structure with SEO considerations."
+                }
+            },
+            "seedProducersAdmin": {
+                "title": "Seed Producers Admin Panel",
+                "desc": "Administrative system for managing seed producer applications and generating analytical reports.",
+                "completedTasks": {
+                    "1": "Implemented generation, preview, and download of Excel and PDF reports.",
+                    "2": "Built reporting functionality for administrative decision-making workflows."
+                }
+            }
+        }
+    },
+    "contactPage": {
+        "title": {
+            "default": "Get in",
+            "gradient": "Touch"
+        },
+        "contactInformation": "Contact Information",
+        "reset": "Reset",
+        "send": "Send",
+        "email": {
+            "title": "E-MAIL",
+            "desc": "nuriksatymbaev7@gmail.com"
+        },
+        "phone": {
+            "title": "PHONE",
+            "desc": "+996 (779) 71-89-02"
+        },
+        "location": {
+            "title": "LOCATION",
+            "desc": "Bishkek, Kyrgyzstan"
+        },
+        "socialMedia": "Social Media",
+        "contactForm": {
+            "title": "Contact Form",
+            "rulesMessage": "Please, fill in this field",
+            "name": {
+                "title": "NAME",
+                "placeholder": "Enter your name"
+            },
+            "email": {
+                "title": "E-MAIL"
+            },
+            "subject": {
+                "title": "Subject",
+                "placeholder": "Message subject"
+            },
+            "message": {
+                "title": "Message",
+                "placeholder": "Describe your project or question..."
+            }
+        }
+    },
+    "footer": {
+        "text": "SN. All rights reserved."
+    }
+}
