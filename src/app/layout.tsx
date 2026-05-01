@@ -30,6 +30,11 @@ export const metadata: Metadata = {
   description: "Building modern web experiences with React and Next.js. Focused on performance, clean UI and great user experience.",
 };
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
+
 async function getInitialMessages() {
   try {
     const fs = await import("fs/promises");
