@@ -18,7 +18,7 @@ export const ContactInformationCard = ({ card, copyFunc }: IProps) => {
             <a
                 href={card.link}
                 target="_blank"
-                className="flex-1 flex gap-4 hover:bg-[var(--primary)]/5 p-2 -m-2 rounded-2xl transition-all"
+                className="flex-1 flex items-center sm:gap-4 gap-2 hover:bg-[var(--primary)]/5 p-2 -m-2 rounded-2xl transition-all"
             >
                 <div className="flex justify-center items-center w-12 h-12 bg-gradient-to-br from-[var(--color-gradient-start)] to-[var(--color-gradient-end)] rounded-2xl flex-shrink-0">
                     <Icon />
@@ -26,7 +26,7 @@ export const ContactInformationCard = ({ card, copyFunc }: IProps) => {
 
                 <div className="flex flex-col">
                     <p className="text-[var(--color-desc)] text-base">{t(card.title)}</p>
-                    <span className="text-white group-hover:text-[var(--primary)] transition-colors">
+                    <span className="text-white break-all group-hover:text-[var(--primary)] transition-colors">
                         {t(card.desc)}
                     </span>
                 </div>

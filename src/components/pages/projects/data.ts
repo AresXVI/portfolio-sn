@@ -21,7 +21,7 @@ export const MY_PROJECTS: IMyProjects[] = [
     {
         id: 2,
         img: '/img/agrodialogg.png',
-        link: 'https://portal.agrosmart.gov.kg/',
+        link: 'https://agro-dialog.vercel.app/',
         title: 'agroDialog.title',
         desc: 'agroDialog.desc',
         tasks: [

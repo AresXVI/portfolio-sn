@@ -91,7 +91,7 @@ export const Navbar = ({ activeSection }: { activeSection: string }) => {
                 placement="right"
                 onClose={() => setOpen(false)}
                 open={open}
-                width={300}
+                size={300}
                 styles={{
                     body: { 
                         padding: 0,
