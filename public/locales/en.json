@@ -94,6 +94,16 @@
                     "1": "Implemented generation, preview, and download of Excel and PDF reports.",
                     "2": "Built reporting functionality for administrative decision-making workflows."
                 }
+            },
+            "realMadrid": {
+                "title": "Real Madrid Fan Website",
+                "desc": "A multi-page Real Madrid fan website built as a learning project using HTML, CSS, and JavaScript.",
+                "completedTasks": {
+                    "1": "Developed interactive UI elements including sliders, modals, and iframe integrations.",
+                    "2": "Recreated trophy pages inspired by the official Real Madrid website.",
+                    "3": "Implemented player cards with Transfermarkt-style statistics.",
+                    "4": "Built JavaScript components including a Card Switcher, converter, and weather display service."
+                }
             }
         }
     },

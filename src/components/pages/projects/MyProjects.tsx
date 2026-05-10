@@ -23,7 +23,7 @@ export const MyProjects = ({ id }: { id: string }) => {
                     />
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 lg:gap-10">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
                     {MY_PROJECTS.map(project => (
                         <MyProjectCard 
                             key={project.id} 

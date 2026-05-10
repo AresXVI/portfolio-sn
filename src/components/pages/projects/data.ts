@@ -56,6 +56,24 @@ export const MY_PROJECTS: IMyProjects[] = [
     },
     {
         id: 4,
+        img: '/img/real-madrid.png',
+        link: 'https://aresxvi.github.io/Real-Madrid',
+        title: 'realMadrid.title',
+        desc: 'realMadrid.desc',
+        tasks: [
+            { text: 'realMadrid.completedTasks.1' },
+            { text: 'realMadrid.completedTasks.2' },
+            { text: 'realMadrid.completedTasks.3' },
+            { text: 'realMadrid.completedTasks.4' },
+        ],
+        technologies: [
+            { text: 'HTML' },
+            { text: 'CSS' },
+            { text: 'JavaScript' }
+        ]
+    },
+    {
+        id: 5,
         img: '/img/agroportal.png',
         link: 'https://portal.agrosmart.gov.kg/',
         title: 'agroPortal.title',
@@ -71,7 +89,7 @@ export const MY_PROJECTS: IMyProjects[] = [
         ]
     },
     {
-        id: 5,
+        id: 6,
         img: '/img/seed-producers-admin-panel.png',
         link: 'https://portal.agrosmart.gov.kg/',
         title: 'seedProducersAdmin.title',
@@ -82,7 +100,6 @@ export const MY_PROJECTS: IMyProjects[] = [
         ],
         technologies: [
             { text: 'React' },
-            { text: 'Vite' },
             { text: 'TypeScript' },
             { text: 'Redux' },
             { text: 'Redux Toolkit' }

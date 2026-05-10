@@ -13,7 +13,7 @@ export const MyProjectCard = ({ project }: { project: IMyProjects }) => {
                         bg-black/10 border border-[var(--color-border-color)] 
                         shadow-xl shadow-cyan-700/40 transition-all duration-300
                         ">
-            <div className="relative w-full h-[230px] sm:h-[250px] lg:h-[260px] overflow-hidden">
+            <div className="relative w-full h-[230px] sm:h-[300px] lg:h-[300px] overflow-hidden">
                 <Image 
                     src={project.img} 
                     alt={t(project.title)} 
