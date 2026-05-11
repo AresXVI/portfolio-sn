@@ -75,7 +75,7 @@
                 "completedTasks": {
                     "1": "Extracted seed producer functionality from a monolithic system and implemented it as an independent service.",
                     "2": "Implemented authentication and role-based access with dedicated navigation and user flow separation.",
-                    "3": "Implemented full application lifecycle from submission to processing through an administrative panel."
+                    "3": "Implemented a requests table in the administrative panel with viewing, approval, rejection, and data filtering."
                 }
             },
             "agroPortal": {
@@ -92,7 +92,7 @@
                 "desc": "Administrative system for managing seed producer applications and generating analytical reports.",
                 "completedTasks": {
                     "1": "Implemented generation, preview, and download of Excel and PDF reports.",
-                    "2": "Developed an applications table in the admin panel with viewing, approval, rejection, and data filtering functionalities."
+                    "2": "Implemented an applications table in the admin panel with viewing, approval, rejection, and data filtering functionalities."
                 }
             },
             "realMadrid": {

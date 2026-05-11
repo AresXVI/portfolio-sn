@@ -54,8 +54,7 @@ export const MY_PROJECTS: IMyProjects[] = [
             { text: 'Vite' },
             { text: 'TypeScript' },
             { text: 'Redux Toolkit' },
-            { text: 'RTK Query' },
-            { text: 'i18next' }
+            { text: 'RTK Query' }
         ]
     },
     {
