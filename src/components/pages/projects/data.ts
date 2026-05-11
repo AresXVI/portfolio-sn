@@ -14,8 +14,8 @@ export const MY_PROJECTS: IMyProjects[] = [
         technologies: [
             { text: 'React' },
             { text: 'TypeScript' },
-            { text: 'Redux' },
-            { text: 'Redux Toolkit' }
+            { text: 'Redux Toolkit' },
+            { text: 'RTK Query' }
         ]
     },
     {
@@ -32,7 +32,10 @@ export const MY_PROJECTS: IMyProjects[] = [
         ],
         technologies: [
             { text: 'Next.js' },
-            { text: 'TypeScript' }
+            { text: 'TypeScript' },
+            { text: 'Redux Toolkit' },
+            { text: 'RTK Query' },
+            { text: 'Next-Intl' }
         ]
     },
     {
@@ -50,8 +53,9 @@ export const MY_PROJECTS: IMyProjects[] = [
             { text: 'React' },
             { text: 'Vite' },
             { text: 'TypeScript' },
-            { text: 'Redux' },
-            { text: 'Redux Toolkit' }
+            { text: 'Redux Toolkit' },
+            { text: 'RTK Query' },
+            { text: 'i18next' }
         ]
     },
     {
@@ -85,7 +89,10 @@ export const MY_PROJECTS: IMyProjects[] = [
         ],
         technologies: [
             { text: 'Next.js' },
-            { text: 'TypeScript' }
+            { text: 'TypeScript' },
+            { text: 'Redux Toolkit' },
+            { text: 'RTK Query' },
+            { text: 'Next-Intl' }
         ]
     },
     {
@@ -101,8 +108,10 @@ export const MY_PROJECTS: IMyProjects[] = [
         technologies: [
             { text: 'React' },
             { text: 'TypeScript' },
-            { text: 'Redux' },
-            { text: 'Redux Toolkit' }
+            { text: 'Redux Toolkit' },
+            { text: 'RTK Query' },
+            { text: 'React PDF' },
+            { text: 'XLSX' }
         ]
     }
 ];
