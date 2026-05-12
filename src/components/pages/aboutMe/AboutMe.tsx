@@ -28,21 +28,21 @@ export const AboutMe = ({id}: {id: string}) => {
                 </div>
                 <div className="w-full flex flex-col lg:flex-row gap-8 lg:gap-10 xl:gap-12">
                     <div className="flex-1 max-w-full lg:max-w-[616px] border border-[var(--color-border-color)] 
-                                    rounded-3xl p-6 sm:p-8 lg:p-10 flex flex-col gap-6 
+                                    rounded-3xl p-5 sm:p-8 lg:p-10 flex flex-col gap-4 sm:gap-6 
                                     shadow-xl shadow-cyan-700/30 transition-all duration-300 hover:shadow-2xl hover:scale-[1.02]">
-                        <h1 className="text-2xl sm:text-3xl font-semibold text-[var(--primary)]">
+                        <h1 className="text-xl sm:text-3xl font-semibold text-[var(--primary)]">
                             {t('mainCard.title')}
                         </h1>
                         <div className="flex flex-col gap-4 text-[var(--color-desc)] leading-relaxed">
                             {descriptions.map(desc => (
-                                <p key={desc.id} className="text-base sm:text-lg">
+                                <p key={desc.id} className="text-[15px] sm:text-lg">
                                     {t(desc.text)}
                                 </p>
                             ))}
                         </div>
                         <div className="w-full h-[2px] rounded-xl bg-gradient-to-r from-[var(--color-gradient-start)] to-[var(--color-gradient-end)] my-2" />
                         <div className="flex flex-col gap-4">
-                            <h1 className="text-lg sm:text-xl text-[var(--primary)] font-medium">
+                            <h1 className="text-xl sm:text-xl text-[var(--primary)] font-medium">
                                 {t("mainCard.mainTechnologies")}
                             </h1>
                             <div className="flex flex-wrap gap-3">
@@ -59,8 +59,8 @@ export const AboutMe = ({id}: {id: string}) => {
                             return (
                                 <div 
                                     key={item.id} 
-                                    className="w-full border border-[var(--color-border-color)] rounded-3xl p-6 sm:p-7 
-                                                flex gap-5 transition-all duration-300 hover:shadow-xl 
+                                    className="w-full border border-[var(--color-border-color)] rounded-3xl p-5 sm:p-8 
+                                                lg:p-8 flex items-center gap-5 transition-all duration-300 hover:shadow-xl 
                                                 hover:scale-[1.02] hover:bg-[var(--primary)]/5 group"
                                 >
                                     <div className="flex-shrink-0 w-12 h-12 sm:w-14 sm:h-14 flex justify-center items-center 
@@ -69,10 +69,10 @@ export const AboutMe = ({id}: {id: string}) => {
                                         <Icon />
                                     </div>
                                     <div className="flex-1">
-                                        <h1 className="text-lg sm:text-xl font-semibold text-[var(--primary)] mb-2 group-hover:text-white transition-colors">
+                                        <h1 className="text-xl sm:text-xl font-semibold text-[var(--primary)] mb-2 group-hover:text-white transition-colors">
                                             {t(item.title)}
                                         </h1>
-                                        <p className="text-[var(--color-desc)] text-base leading-relaxed">
+                                        <p className="text-[var(--color-desc)] text-[15px] sm:text-base leading-relaxed">
                                             {t(item.desc)}
                                         </p>
                                     </div>

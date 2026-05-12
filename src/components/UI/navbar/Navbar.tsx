@@ -6,6 +6,7 @@ import { useTranslations } from 'next-intl';
 import { LanguageSelector } from '../changeLang/ChangeLangNav';
 import { Button, Drawer } from "antd";
 import { MenuOutlined } from "@ant-design/icons";
+import { scrollTo } from '@//utils/scrollTo';
 
 export const PagesID: Record<string, string> = {
     welcome: 'welcome',
@@ -32,10 +33,7 @@ export const Navbar = ({ activeSection }: { activeSection: string }) => {
     }, []);
 
     const handleScrollTo = (id: string) => {
-        const element = document.getElementById(id);
-        if (element) {
-            element.scrollIntoView({ behavior: "smooth" });
-        }
+        scrollTo(id)
         setOpen(false);
     };
 
@@ -76,7 +74,9 @@ export const Navbar = ({ activeSection }: { activeSection: string }) => {
                     </div>
 
                     <div className="flex items-center gap-3">
-                        <LanguageSelector />
+                        <div className='md:block hidden'>
+                            <LanguageSelector />
+                        </div>
                         <button
                             onClick={() => setOpen(true)}
                             className="md:hidden p-2 text-white hover:text-[var(--primary)] transition-colors"
@@ -91,7 +91,8 @@ export const Navbar = ({ activeSection }: { activeSection: string }) => {
                 placement="right"
                 onClose={() => setOpen(false)}
                 open={open}
-                size={300}
+                size={230}
+                title={<div className='w-full flex justify-end'><LanguageSelector /></div>}
                 styles={{
                     body: { 
                         padding: 0,
@@ -116,7 +117,7 @@ export const Navbar = ({ activeSection }: { activeSection: string }) => {
                                 type="text"
                                 block
                                 size="large"
-                                className={`h-14 justify-start text-left text-base mb-2 rounded-xl transition-all font-medium
+                                className={`h-14 flex justify-start! text-left text-base mb-2 rounded-xl transition-all font-medium
                                     ${isActive 
                                         ? 'text-[var(--primary)]! bg-[var(--primary)]/10!' 
                                         : 'text-[var(--color-desc)]! hover:text-white! hover:bg-white/5!'

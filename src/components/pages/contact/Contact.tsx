@@ -66,7 +66,7 @@ export const Contact = ({ id }: { id: string }) => {
                 </div>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 xl:gap-12">
                     <div className="flex flex-col gap-8">
-                        <div className="p-7 sm:p-8 lg:p-10 border border-[var(--color-border-color)] rounded-3xl shadow-xl shadow-cyan-700/30 flex-1">
+                        <div className="p-5 sm:p-7 lg:p-8 border border-[var(--color-border-color)] rounded-3xl shadow-xl shadow-cyan-700/30 flex-1">
                             <h1 className="text-xl font-semibold text-[var(--primary)] mb-6">
                                 {t('contactInformation')}
                             </h1>
@@ -80,7 +80,7 @@ export const Contact = ({ id }: { id: string }) => {
                                 ))}
                             </div>
                         </div>
-                        <div className="p-7 sm:p-8 lg:p-10 border border-[var(--color-border-color)] rounded-3xl shadow-xl shadow-cyan-700/30">
+                        <div className="p-5 sm:p-7 lg:p-8 border border-[var(--color-border-color)] rounded-3xl shadow-xl shadow-cyan-700/30">
                             <h1 className="text-xl font-semibold text-[var(--primary)] mb-6">
                                 {t('socialMedia')}
                             </h1>
@@ -88,7 +88,7 @@ export const Contact = ({ id }: { id: string }) => {
                         </div>
                     </div>
                     <div className="flex flex-col">
-                        <div className="p-7 sm:p-8 lg:p-10 border border-[var(--color-border-color)] rounded-3xl shadow-xl shadow-cyan-700/30 flex-1">
+                        <div className="p-5 sm:p-7 lg:p-8 border border-[var(--color-border-color)] rounded-3xl shadow-xl shadow-cyan-700/30 flex-1">
                             <h1 className="text-xl font-semibold text-[var(--primary)] mb-6">
                                 {t('contactForm.title')}
                             </h1>

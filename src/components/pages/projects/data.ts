@@ -35,7 +35,7 @@ export const MY_PROJECTS: IMyProjects[] = [
             { text: 'TypeScript' },
             { text: 'Redux Toolkit' },
             { text: 'RTK Query' },
-            { text: 'Next-Intl' }
+            { text: 'next-intl' }
         ]
     },
     {
@@ -91,7 +91,7 @@ export const MY_PROJECTS: IMyProjects[] = [
             { text: 'TypeScript' },
             { text: 'Redux Toolkit' },
             { text: 'RTK Query' },
-            { text: 'Next-Intl' }
+            { text: 'next-intl' }
         ]
     },
     {

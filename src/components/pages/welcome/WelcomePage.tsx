@@ -5,14 +5,10 @@ import { Title } from "../../UI/title/Title";
 import { MessagesMainPage } from "../../UI/messages/MessagesMainPage";
 import { DownArrowIcon } from "../../UI/svg/down-arrow";
 import { useTranslations } from "next-intl";
+import { scrollTo } from "@//utils/scrollTo";
 
 export const WelcomePage = ({ id }: { id: string }) => {
   const t = useTranslations('welcomePage')
-
-  const scrollToAboutMe = (id: string) => {
-    const AboutMeId = document.getElementById(id)
-    AboutMeId?.scrollIntoView({ behavior: 'smooth' })
-  }
 
   return (
     <section
@@ -52,7 +48,7 @@ export const WelcomePage = ({ id }: { id: string }) => {
           </div>
 
           <div 
-            onClick={() => scrollToAboutMe('aboutMe')}
+            onClick={() => scrollTo('aboutMe')}
             className="text-gray-400 hover:text-[var(--color-gradient-start)] hover:cursor-pointer 
                         transition-all mt-8 sm:mt-10 md:mt-12 lg:mt-16 animate-float active:scale-110 hidden sm:block"
           >
@@ -63,7 +59,7 @@ export const WelcomePage = ({ id }: { id: string }) => {
           <div className="flex flex-col sm:flex-row gap-4 w-full max-w-[400px] sm:max-w-[420px] md:max-w-[460px] 
                           justify-center items-center px-4">
             <Button
-              onClick={() => scrollToAboutMe('myProjects')}
+              onClick={() => scrollTo('myProjects')}
               className="w-full sm:flex-1 max-w-[220px] sm:max-w-none h-11 md:h-12 
                           transition-all duration-200 ease-out hover:scale-105 
                           antd-primary-default-bg font-medium"
@@ -74,7 +70,7 @@ export const WelcomePage = ({ id }: { id: string }) => {
             </Button>
 
             <Button
-              onClick={() => scrollToAboutMe('contact')}
+              onClick={() => scrollTo('contact')}
               className="w-full sm:flex-1 max-w-[220px] sm:max-w-none h-11 md:h-12 
                         transition-all duration-200 ease-out hover:scale-105 
                         bg-transparent! font-medium"
@@ -103,11 +99,6 @@ export const WelcomePage = ({ id }: { id: string }) => {
 // export const WelcomePage = ({ id }: { id: string }) => {
 //   const t = useTranslations('welcomePage')
 
-//   const scrollToAboutMe = () => {
-//     const AboutMeId = document.getElementById('aboutMe')
-//     AboutMeId?.scrollIntoView({ behavior: 'smooth' })
-//   }
-
 //   return (
 //     <section
 //       id={id}
@@ -132,7 +123,7 @@ export const WelcomePage = ({ id }: { id: string }) => {
 //           </p>
 //           <MessagesMainPage />
 //           <div 
-//             onClick={scrollToAboutMe}
+//             onClick={scrollTo}
 //             className="text-gray-400 hover:text-[var(--color-gradient-start)] hover:cursor-pointer transition-all mt-12 animate-float active:scale-110"
 //           >
 //             <DownArrowIcon />
