@@ -13,7 +13,7 @@ export const WelcomePage = ({ id }: { id: string }) => {
   return (
     <section
       id={id}
-      className="w-full relative min-h-screen h-screen bg-gradient-to-br from-cyan-700/20 to-cyan-700/20 
+      className="w-full relative min-h-150 h-screen bg-gradient-to-br from-cyan-700/20 to-cyan-700/20 
                 border-b-[0.5px] border-(--color-border-color) 
                 px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16"
     >
@@ -43,14 +43,14 @@ export const WelcomePage = ({ id }: { id: string }) => {
             {t('description')}
           </p>
 
-          <div className="mb-10 md:mb-12">
+          <div className="mb-7 sm:mb-0 xl:mb-12">
             <MessagesMainPage />
           </div>
 
           <div 
             onClick={() => scrollTo('aboutMe')}
             className="text-gray-400 hover:text-[var(--color-gradient-start)] hover:cursor-pointer 
-                        transition-all mt-8 sm:mt-10 md:mt-12 lg:mt-16 animate-float active:scale-110 hidden sm:block"
+                        transition-all sm:mt-10 md:mt-12 xl:mt-0 animate-float active:scale-110 hidden sm:block"
           >
             <DownArrowIcon />
           </div>
