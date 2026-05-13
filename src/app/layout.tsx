@@ -4,11 +4,6 @@ import "./globals.css";
 import { Poppins, Inter } from 'next/font/google'
 import Providers from "./Provider";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
@@ -20,14 +15,39 @@ const poppins = Poppins({
   variable: '--font-poppins',
 })
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 export const metadata: Metadata = {
-  title: "Frontend Developer | React, Next.js",
+  title: { 
+    default: "Frontend Developer | React, Next.js", 
+    template: "%s | SN"
+  },
   description: "Building modern web experiences with React and Next.js. Focused on performance, clean UI and great user experience.",
+
+  robots: {
+    index: true,
+    follow: true
+  },
+
+  alternates: {
+    canonical: "https://satymbaev-dev.vercel.app"
+  },
+
+  openGraph: {
+    title: "Frontend Developer | React, Next.js",
+    description: "Building modern web experiences with React and Next.js. Focused on performance, clean UI and great user experience.",
+    images: [{
+      url: "/og-image.png",
+      width: 1200,
+      height: 630,
+      alt: "Nurmukhammedaaly Satymbaev - Frontend Developer"
+    }]
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Frontend Developer | React, Next.js",
+    description: "Building modern web experiences with React and Next.js. Focused on performance, clean UI and great user experience.",
+    images: ['/og-image.png']
+  }
 };
 
 export const viewport = {
@@ -57,7 +77,7 @@ export default async function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${inter.variable} ${poppins.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${inter.variable} ${poppins.variable} h-full antialiased`}
     >
       <body>
         <Providers initialMessages={initialMessages}>
