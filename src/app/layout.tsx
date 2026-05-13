@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     title: "Frontend Developer | React, Next.js",
     description: "Building modern web experiences with React and Next.js. Focused on performance, clean UI and great user experience.",
     images: [{
-      url: "/og-image.png",
+      url: "/img/og-image.png",
       width: 1200,
       height: 630,
       alt: "Nurmukhammedaaly Satymbaev - Frontend Developer"
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Frontend Developer | React, Next.js",
     description: "Building modern web experiences with React and Next.js. Focused on performance, clean UI and great user experience.",
-    images: ['/og-image.png']
+    images: ['/img/og-image.png']
   }
 };
 
